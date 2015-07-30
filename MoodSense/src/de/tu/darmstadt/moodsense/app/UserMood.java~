@@ -53,7 +53,7 @@ import de.tu.darmstadt.moodsense.R;
 
 /**
  * This activity is responsible for major computation of worlds mood on twitter
- * @author dinesh
+ * @author manishaluthra247
  * 
  */
 @SuppressLint("NewApi")

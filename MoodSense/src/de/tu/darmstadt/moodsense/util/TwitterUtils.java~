@@ -13,7 +13,7 @@ import de.tu.darmstadt.moodsense.store.SharedPreferencesCredentialStore;
 
 /**
  * Utility class for accessing twitter internal functions using Twitter4j library
- * @author dinesh
+ * @author manishaluthra247
  * PS: Part of this code has been taken from https://github.com/ddewaele/
  */
 public class TwitterUtils {

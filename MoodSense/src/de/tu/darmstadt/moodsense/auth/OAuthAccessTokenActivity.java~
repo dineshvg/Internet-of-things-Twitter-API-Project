@@ -35,7 +35,7 @@ import de.tu.darmstadt.moodsense.util.QueryStringParser;
 /**
  * This activity does the OAuth authentication for twitter.
  * After successful login launches SocialMood activity.
- * @author dinesh
+ * @author manishaluthra
  * PS: Part of this code has been taken from "https://github.com/ddewaele/"
  * */
 

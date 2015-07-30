@@ -63,7 +63,7 @@ import android.widget.Toast;
 /**
  * This activity is responsible to display the current world's mood in comparison to the user's mood
  * Then visualize the world's mood using Achart library Pie chart
- * @author dinesh
+ * @author manishaluthra247
  * 
  */
 	@SuppressLint("NewApi")

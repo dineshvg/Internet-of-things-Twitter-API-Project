@@ -37,7 +37,7 @@ import de.tu.darmstadt.moodsense.store.SharedPreferencesCredentialStore;
 /**
  * This is the main activity class which further launch OAuth authentication for Twitter
  * or launches the UserMood Activity if the login is already saved.
- * @author dinesh
+ * @author manishaluthra
  * PS: Part of this code has been taken from https://github.com/ddewaele/
  */
 public class TwitterAuthentication extends Activity {

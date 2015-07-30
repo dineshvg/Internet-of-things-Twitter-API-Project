@@ -45,7 +45,7 @@ import android.widget.Toast;
 
 /**
  * Screen to just start the service needs to be removed
- * @author dinesh
+ * @author manishaluthra247
  *
  */
 public class UserSocialMood extends Activity{
