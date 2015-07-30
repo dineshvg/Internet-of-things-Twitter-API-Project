@@ -1,0 +1,175 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent" >
+	 
+	  <!-- Header aligned to top -->
+	  <RelativeLayout
+	    android:id="@+id/header"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+	    android:background="@drawable/header"
+	    android:gravity="center" >
+	 
+	    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:text="@string/welcome" 
+        android:textColor="#780000"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+	   </RelativeLayout>
+	   	 
+	  <!-- Footer aligned to bottom -->
+      <RelativeLayout
+	    android:id="@+id/footer"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/footer"
+	    android:gravity="center" >
+	 
+	    <TextView
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_margin="5dp"
+	      android:text="Copyright © 2014-2015 MoodSense"
+     	  android:textColor="#000"
+	      android:textSize="10sp" />
+	  </RelativeLayout>
+	 
+	  <!-- Scrollable Item below header and above footer -->
+	  <ScrollView
+	    android:id="@+id/scrollableContents"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_above="@id/footer"
+	    android:background="#005"
+	    android:layout_below="@id/header" >
+	 
+    <LinearLayout
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:gravity="center_horizontal"
+	      android:orientation="vertical"
+	      android:background="@drawable/middleback" >
+	       <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:text="@string/how_u_feeling"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+	     
+<RadioGroup 
+    android:id="@+id/radiogp"
+    android:layout_marginTop="7dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:saveEnabled="true">
+    
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moodName0"  
+        
+        android:textSize="18sp"/>
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moodName1"  
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moodName2"  
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moodName3"  
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moodName4"  
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moodName5"  
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moodName6"  
+        android:textSize="18sp" />
+	<RadioButton
+        android:id="@+id/radioButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moodName7"
+        android:textSize="18sp" />
+    
+   </RadioGroup>
+<TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/world_feeling"  />
+ 
+<Button
+    android:id="@+id/enter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center"
+    android:layout_marginTop="5dp"
+    android:text="@string/enter"
+    android:textStyle="bold"
+  />
+<Button
+    android:id="@+id/enterno"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center"
+    android:layout_marginTop="5dp"
+    android:text="@string/enterno"
+    android:textStyle="bold"
+  />
+    </LinearLayout>
+	   
+	 
+	  </ScrollView>
+	 
+</RelativeLayout>

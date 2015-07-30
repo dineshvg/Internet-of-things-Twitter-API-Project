@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  TODO write about page -->
+<resources>
+    <string name="hello">Hello World, MoodSense!</string>
+    <string name="app_name">MoodSense</string>
+    <string name="mood_loved">Loved</string>
+    <string name="welcome">Welcome to MoodSense</string>
+    <string name="about_app1">This application, computes how world is feeling right now</string>
+    <string name="about_app2">Just click on Authenticate with twitter button and you are all set to go</string>
+    <string name="twitter_button">Authenticate with Twitter</string>
+    <string name="how_u_feeling">Hi! How are you feeling today?</string>
+    <string name="world_feeling">You want to see, how rest of the world is feeling today?</string>
+    <string name="clickto">Then click on button Proceed</string>
+    <string name="enter">Enter Mood to Twitter</string>
+    <string name="enterno">Enter only to home</string>
+    <string name="about"> Hi! MoodSense  application computes mood of the world for you. This app uses twitter data to predict mood of the world. We search for various moods such as love, joy, surprise, anger, envy, sadness, fear and neutral. We have used several smileys to depict
+        mood type for you:-
+       
+    </string>
+    <string name="about_more">
+        The app takes your mood as input and computes how many people in the world are feeling the same as you are. 
+        It is also possible to visualize world of mood. This displays the percentage of people with different moods. 
+         Hope you enjoy this app!!
+    </string>
+    <string  name="note">Note: You need to have Internet connection and Twitter account to use this app. </string>
+    <string name="MyTwitterMood">My Twitter Mood</string>
+    <string name="moodName0">loved</string>
+    <string name="moodName1">happy</string>
+    <string name="moodName2">surprised</string>
+    <string name="moodName3">angry</string>
+    <string name="moodName4">envy</string>
+    <string name="moodName5">sad</string>
+    <string name="moodName6">fear</string>
+    <string name="moodName7">neutral</string>
+    <string name="EnterMood">Enter Mood</string>
+    <string name="copyrights">Copyright © 2014 - 2015 MoodSense</string>
+    <string name="start_user_service">Start User Service</string>
+</resources>

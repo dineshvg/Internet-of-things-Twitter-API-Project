@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/logout"
+          
+          android:title="Logout"
+          android:showAsAction="ifRoom"/>
+    <item android:id="@+id/about"
+          
+          android:title="About"
+          android:showAsAction="ifRoom"/>
+    
+     </menu>

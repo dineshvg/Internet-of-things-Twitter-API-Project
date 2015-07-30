@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_start_service"
+          android:icon="@drawable/button_play"
+          android:title="Start Service" ></item>
+	 <item android:id="@+id/menu_stop_service"
+          android:icon="@drawable/button_stop"
+          android:title="Stop Service" ></item>
+</menu>

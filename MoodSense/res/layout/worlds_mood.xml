@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent" >
+	 
+	  <!-- Header aligned to top -->
+	  <RelativeLayout
+	    android:id="@+id/header"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+	    android:background="@drawable/header"
+	    android:gravity="center" >
+	 
+	    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:text="@string/welcome" 
+        android:textColor="#780000"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+	   </RelativeLayout>
+	   	 
+	  <!-- Footer aligned to bottom -->
+      <RelativeLayout
+	    android:id="@+id/footer"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/footer"
+	    android:gravity="center" >
+	 
+	    <TextView
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_margin="5dp"
+	      android:text="Copyright © 2014-2015 MoodSense"
+     	  android:textColor="#000"
+	      android:textSize="10sp" />
+	  </RelativeLayout>
+	 
+	  <!-- Scrollable Item below header and above footer -->
+	  <ScrollView
+	    android:id="@+id/scrollableContents"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_above="@id/footer"
+	    android:background="#005"
+	    android:layout_below="@id/header" >
+	 
+    <LinearLayout
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:gravity="center_horizontal"
+	      android:orientation="vertical"
+	      android:background="@drawable/middleback" >
+	  <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="You are feeling..."
+        android:layout_gravity="left"
+        android:textColor="#000000" 
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+     <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="left"
+        android:textSize="24sp"
+        android:textColor="#980000"
+        android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="54dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/smiley"
+            android:layout_marginRight="10dp" />
+       </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="The Mood of the World is..." 
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_gravity="left"/>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="left"
+        android:textSize="24sp"
+        android:textColor="#980000"
+        android:textStyle="bold"
+       />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="54dp"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/smiley"
+            android:layout_marginRight="10dp"  />
+
+    </RelativeLayout>
+
+<TextView
+    android:id="@+id/userinfo"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="center" 
+    android:textColor="#000000"/>
+
+<TextView
+    android:id="@+id/textView6"
+    android:layout_marginTop="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:text="Wanna visualize mood??"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="left"
+    android:textColor="#000000" />
+
+<Button
+    android:id="@+id/vismood"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center"
+    android:text="Visualize mood"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:textStyle="bold"/>
+
+    </LinearLayout>
+	  </ScrollView>
+	 
+</RelativeLayout>

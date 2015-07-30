@@ -1,0 +1,84 @@
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:tools="http://schemas.android.com/tools"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent" >
+	 
+	  <!-- Header aligned to top -->
+	  <RelativeLayout
+	    android:id="@+id/header"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+	    android:background="@drawable/header"
+	    android:gravity="center" >
+	 
+		<TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="26sp"
+	        android:textStyle="bold"
+	        android:text="@string/welcome" 
+	        android:textColor="#780000"
+	        android:textAlignment="center"
+	        android:layout_gravity="center"
+	        android:layout_marginTop="20dp" />
+	   </RelativeLayout>
+	   	 
+	  <!-- Footer aligned to bottom -->
+      <RelativeLayout
+	    android:id="@+id/footer"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/footer"
+	    android:gravity="center" >
+	 
+	    <TextView
+	      android:layout_width="wrap_content"
+	      android:layout_height="wrap_content"
+	      android:layout_margin="5dp"
+	      android:text="@string/copyrights"
+     	  android:textColor="#000"
+	      android:textSize="10sp" />
+	  </RelativeLayout>
+	 
+	  <!-- Scrollable Item below header and above footer -->
+      <ScrollView
+	    android:id="@+id/scrollableContents"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_above="@id/footer"
+	    android:background="#005"
+	    android:layout_below="@id/header" >
+	 
+    <LinearLayout
+	      android:layout_width="fill_parent"
+	      android:layout_height="wrap_content"
+	      android:gravity="center_horizontal"
+	      android:orientation="vertical"
+	      android:background="@drawable/middleback" >
+	<!--  Code moved to act as a service	<Button
+		    android:id="@+id/MyTwitterMood"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="bottom|center"
+		    android:layout_marginTop="5dp"
+		    android:text="@string/MyTwitterMood"
+		    android:textStyle="bold"  -->
+		  />
+		<Button
+		    android:id="@+id/EnterMood"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="bottom|center"
+		    android:layout_marginTop="5dp"
+		    android:text="@string/EnterMood"
+		    android:textStyle="bold"
+		  />
+    </LinearLayout>
+	   
+	 
+ </ScrollView>
+	 
+</RelativeLayout>
